@@ -1,0 +1,19 @@
+@import "./shared.css";
+
+@import "./shared-components/header.css";
+
+@import "./shared-components/hero.css";
+
+@import "./shared-components/footer.css";
+
+@import "./shared-components/about.css";
+
+@import "./category/category.css";
+
+@import "./products/products.css";
+
+@import "./login/login.css";
+
+@import "./products/products-admin.css";
+
+@import "./queries.css";

@@ -1,0 +1,75 @@
+.info-container {
+  padding: 3rem 0;
+}
+
+.about {
+  padding: 1rem;
+}
+
+.about__title {
+  text-align: center;
+  margin: 2rem;
+  display: grid;
+  place-items: center;
+}
+
+.about__logo {
+  height: 48px;
+}
+
+.about__item {
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.contact {
+  padding: 1rem;
+}
+
+.contact__title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 3rem 0;
+}
+
+.form__control {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form__label {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--blue);
+}
+
+.form__input {
+  background-color: #fff;
+  padding: 2rem 0.5rem 1rem 0.5rem;
+  border-radius: 5px;
+  border: 2px solid var(--blue);
+  transition: all 0.2s ease;
+  outline: 4px solid transparent;
+}
+
+.form__input:focus {
+  outline: 4px solid rgba(0, 110, 255, 0.2);
+}
+
+.form__input::placeholder {
+  font-size: 1.75rem;
+}
+
+.copyright {
+  padding: 3rem 0;
+  font-size: 1.75rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.copyright p {
+  margin: 1rem 0;
+}

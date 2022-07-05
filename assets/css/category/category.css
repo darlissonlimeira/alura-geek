@@ -1,0 +1,23 @@
+.category__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.category__title {
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+
+.category___all-button {
+  display: flex;
+  align-items: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.category___all-button svg {
+  stroke: var(--blue);
+}

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Alura Geek</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="row header__container">
+          <h1 class="header__title" aria-label="Alura Geek">
+            <a href="index.html">
+              <img
+                class="header__logo"
+                aria-label="Alura Geek"
+                src="./assets/img/Logo.svg"
+                alt="Logo alura geek"
+              />
+            </a>
+          </h1>
+          <a
+            class="header__login-button button button-secondary"
+            href="login.html"
+            >Login</a
+          >
+          <div class="header__search">
+            <input
+              class="search"
+              type="search"
+              placeholder="O que você deseja encontrar?"
+            />
+            <button class="button-search">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="hero">
+          <div class="row hero__container">
+            <hgroup>
+              <h2 class="hero__title">Dezembro Promocional</h2>
+              <h3 class="hero__subtitle">
+                Productos selecionados com 33% de desconto
+              </h3>
+            </hgroup>
+            <a
+              class="button button-primary hero__button"
+              href="#consoles-category"
+              >Ver Consoles</a
+            >
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- Diversos -->
+        <section class="category">
+          <div class="row category__container">
+            <header class="category__header">
+              <h2 class="category__title">Star Wars</h2>
+              <a class="category___all-button"
+                >Ver tudo
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="button-icon"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </header>
+            <ul class="product__list">
+              <li class="product__item">
+                <div class="product__card">
+                  <figure>
+                    <img
+                      class="product__img"
+                      src="assets/img/products/copo.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="product__info">
+                    <h3 class="product__title">Copo Stormtrooper</h3>
+                    <h4 class="product__price">R$ 60,00</h4>
+                  </div>
+                  <a class="product__link" href="">Ver produto</a>
+                </div>
+              </li>
+
+              <li class="product__item">
+                <div class="product__card">
+                  <figure>
+                    <img
+                      class="product__img"
+                      src="assets/img/products/vader_home.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="product__info">
+                    <h3 class="product__title">
+                      Lego Dart Vader + Tie Figher Pilot
+                    </h3>
+                    <h4 class="product__price">R$ 120,00</h4>
+                  </div>
+                  <a class="product__link" href="">Ver produto</a>
+                </div>
+              </li>
+
+              <li class="product__item">
+                <div class="product__card">
+                  <figure>
+                    <img
+                      class="product__img"
+                      src="assets/img/products/yoda2_home.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="product__info">
+                    <h3 class="product__title">Boneco Yoda</h3>
+                    <h4 class="product__price">R$ 60,00</h4>
+                  </div>
+                  <a class="product__link" href="">Ver produto</a>
+                </div>
+              </li>
+
+              <li class="product__item">
+                <div class="product__card">
+                  <figure>
+                    <img
+                      class="product__img"
+                      src="assets/img/products/trooper_home.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="product__info">
+                    <h3 class="product__title">Boneco Yoda</h3>
+                    <h4 class="product__price">R$ 60,00</h4>
+                  </div>
+                  <a class="product__link" href="">Ver produto</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Consoles -->
+        <section class="category">
+          <div class="row category__container">
+            <header class="category__header">
+              <h2 id="consoles-category" class="category__title">Consoles</h2>
+              <a class="category___all-button"
+                >Ver tudo
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="button-icon"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </header>
+            <ul class="product__list">
+              <li class="product__item">
+                <div class="product__card">
+                  <figure>
+                    <img
+                      class="product__img"
+                      src="assets/img/products/xbox-home.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="product__info">
+                    <h3 class="product__title">Joystick Xbox</h3>
+                    <h4 class="product__price">R$ 60,00</h4>
+                  </div>
+                  <a class="product__link" href="">Ver produto</a>
+                </div>
+              </li>
+
+              <li class="product__item">
+                <div class="product__card">
+                  <figure>
+                    <img
+                      class="product__img"
+                      src="assets/img/products/ps4-home.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="product__info">
+                    <h3 class="product__title">Console PS4</h3>
+                    <h4 class="product__price">R$ 120,00</h4>
+                  </div>
+                  <a class="product__link" href="">Ver produto</a>
+                </div>
+              </li>
+
+              <li class="product__item">
+                <div class="product__card">
+                  <figure>
+                    <img
+                      class="product__img"
+                      src="assets/img/products/nintendo-home.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="product__info">
+                    <h3 class="product__title">Nintendo</h3>
+                    <h4 class="product__price">R$ 60,00</h4>
+                  </div>
+                  <a class="product__link" href="">Ver produto</a>
+                </div>
+              </li>
+
+              <li class="product__item">
+                <div class="product__card">
+                  <figure>
+                    <img
+                      class="product__img"
+                      src="assets/img/products/switch-home.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="product__info">
+                    <h3 class="product__title">Nintendo Switch</h3>
+                    <h4 class="product__price">R$ 60,00</h4>
+                  </div>
+                  <a class="product__link" href="">Ver produto</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Diversos -->
+        <section class="category">
+          <div class="row category__container">
+            <header class="category__header">
+              <h2 class="category__title">Diversos</h2>
+              <a class="category___all-button"
+                >Ver tudo
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="button-icon"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </header>
+            <ul class="product__list">
+              <li class="product__item">
+                <div class="product__card">
+                  <figure>
+                    <img
+                      class="product__img"
+                      src="assets/img/products/atari-home.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="product__info">
+                    <h3 class="product__title">Camiseta Atari</h3>
+                    <h4 class="product__price">R$ 60,00</h4>
+                  </div>
+                  <a class="product__link" href="">Ver produto</a>
+                </div>
+              </li>
+
+              <li class="product__item">
+                <div class="product__card">
+                  <figure>
+                    <img
+                      class="product__img"
+                      src="assets/img/products/snes-home.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="product__info">
+                    <h3 class="product__title">Camiseta SNES</h3>
+                    <h4 class="product__price">R$ 60,00</h4>
+                  </div>
+                  <a class="product__link" href="">Ver produto</a>
+                </div>
+              </li>
+
+              <li class="product__item">
+                <div class="product__card">
+                  <figure>
+                    <img
+                      class="product__img"
+                      src="assets/img/products/sonic-home.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="product__info">
+                    <h3 class="product__title">Boneco Sonic</h3>
+                    <h4 class="product__price">R$ 60,00</h4>
+                  </div>
+                  <a class="product__link" href="">Ver produto</a>
+                </div>
+              </li>
+
+              <li class="product__item">
+                <div class="product__card">
+                  <figure>
+                    <img
+                      class="product__img"
+                      src="assets/img/products/time-home.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="product__info">
+                    <h3 class="product__title">Relógio despertador retrô</h3>
+                    <h4 class="product__price">R$ 60,00</h4>
+                  </div>
+                  <a class="product__link" href="">Ver produto</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__info">
+          <div class="row info-container">
+            <!-- about -->
+            <section class="about">
+              <div class="">
+                <h2 class="about__title">
+                  <img
+                    aria-label="Alura Geek"
+                    src="./assets/img/Logo.svg"
+                    alt="Logo alura geek"
+                    class="about__logo"
+                  />
+                </h2>
+                <ul class="about__links">
+                  <li class="about__item">
+                    <a class="about__link" href="#">Quem somos nós</a>
+                  </li>
+                  <li class="about__item">
+                    <a class="about__link" href="#">Política de privacidade</a>
+                  </li>
+                  <li class="about__item">
+                    <a class="about__link" href="#">Programa de fidelidade</a>
+                  </li>
+                  <li class="about__item">
+                    <a class="about__link" href="#">Nossas lojas</a>
+                  </li>
+                  <li class="about__item">
+                    <a class="about__link" href="#">Quero ser franqueado</a>
+                  </li>
+                  <li class="about__item">
+                    <a class="about__link" href="#">Anuncie aqui</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- Contact -->
+            <section class="contact">
+              <div class="">
+                <h2 class="contact__title">Fale conosco</h2>
+                <form class="contact__form">
+                  <div class="form__control">
+                    <label class="form__label" for="">Nome</label>
+                    <input
+                      class="form__input"
+                      type="text"
+                      placeholder="Seu nome"
+                    />
+                  </div>
+                  <div class="form__control">
+                    <label class="form__label" for="">Mensagem</label>
+                    <textarea
+                      class="form__input"
+                      rows="5"
+                      placeholder="Escreva sua mensagem"
+                    ></textarea>
+                  </div>
+                  <button class="button button-primary" type="submit">
+                    Enviar mensagem
+                  </button>
+                </form>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <section class="copyright">
+          <div class="row">
+            <h2>Desenvolvido por Darlisson L. Silva</h2>
+            <p>&copy; 2022</p>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>

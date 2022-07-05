@@ -1,0 +1,49 @@
+@media screen and (min-width: 768px) {
+  .header__container {
+    display: flex;
+  }
+
+  .header__login-button {
+    order: 2;
+    margin-left: auto;
+  }
+
+  .header__search {
+    margin-right: auto;
+  }
+
+  .hero__container {
+    height: 300px;
+  }
+
+  .h-product__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info-container {
+    display: flex;
+  }
+
+  .about,
+  .contact {
+    flex: 1;
+  }
+
+  .contact {
+    padding-right: 5rem;
+  }
+
+  .login__container,
+  .contact__container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .row {
+    width: 980px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="row header__container">
+          <h1 class="header__title" aria-label="Alura Geek">
+            <a href="index.html">
+              <img
+                class="header__logo"
+                aria-label="Alura Geek"
+                src="./assets/img/Logo.svg"
+                alt="Logo alura geek"
+              />
+            </a>
+          </h1>
+        </div>
+      </header>
+      <main>
+        <section class="login">
+          <div class="row login__container">
+            <h1 class="login__title">Iniciar sessão</h1>
+            <form id="login-form" class="login__form" post="">
+              <div class="form__control">
+                <label class="form__label" for="">Email</label>
+                <input
+                  class="form__input"
+                  type="email"
+                  placeholder="Seu endereço de email"
+                  required
+                  value="admin@admin.com"
+                />
+              </div>
+              <div class="form__control">
+                <label class="form__label" for="">Senha</label>
+                <input
+                  class="form__input"
+                  type="password"
+                  placeholder="Sua senha cadastrada"
+                  required
+                  value="admin980808098"
+                />
+              </div>
+              <button class="button button-primary" type="submit">
+                Entrar
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__info">
+          <div class="row info-container">
+            <!-- about -->
+            <section class="about">
+              <div class="">
+                <h2 class="about__title">
+                  <img
+                    aria-label="Alura Geek"
+                    src="./assets/img/Logo.svg"
+                    alt="Logo alura geek"
+                    class="about__logo"
+                  />
+                </h2>
+                <ul class="about__links">
+                  <li class="about__item">
+                    <a class="about__link" href="#">Quem somos nós</a>
+                  </li>
+                  <li class="about__item">
+                    <a class="about__link" href="#">Política de privacidade</a>
+                  </li>
+                  <li class="about__item">
+                    <a class="about__link" href="#">Programa de fidelidade</a>
+                  </li>
+                  <li class="about__item">
+                    <a class="about__link" href="#">Nossas lojas</a>
+                  </li>
+                  <li class="about__item">
+                    <a class="about__link" href="#">Quero ser franqueado</a>
+                  </li>
+                  <li class="about__item">
+                    <a class="about__link" href="#">Anuncie aqui</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- Contact -->
+            <section class="contact">
+              <div class="">
+                <h2 class="contact__title">Fale conosco</h2>
+                <form class="contact__form">
+                  <div class="form__control">
+                    <label class="form__label" for="">Nome</label>
+                    <input
+                      class="form__input"
+                      type="text"
+                      placeholder="Seu nome"
+                    />
+                  </div>
+                  <div class="form__control">
+                    <label class="form__label" for="">Mensagem</label>
+                    <textarea
+                      class="form__input"
+                      rows="5"
+                      placeholder="Escreva sua mensagem"
+                    ></textarea>
+                  </div>
+                  <button class="button button-primary" type="submit">
+                    Enviar mensagem
+                  </button>
+                </form>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <section class="copyright">
+          <div class="row">
+            <h2>Desenvolvido por Darlisson L. Silva</h2>
+            <p>&copy; 2022</p>
+          </div>
+        </section>
+      </footer>
+    </div>
+    <script src="assets/js/login.js"></script>
+  </body>
+</html>
