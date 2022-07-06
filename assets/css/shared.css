@@ -18,6 +18,11 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: #fefefe;
 }
 
 body,
@@ -31,7 +36,18 @@ a,
 button,
 input,
 textarea {
-  all: unset;
+  font-family: inherit;
+  border: none;
+  background: none;
+  text-decoration: none;
+  outline: transparent;
+}
+
+a:visited,
+a:hover,
+a:active,
+a:link {
+  text-decoration: none;
 }
 
 a,
@@ -46,7 +62,7 @@ svg {
 }
 
 .row {
-  padding: 1rem;
+  padding: 1rem 1.25rem;
 }
 
 .button {

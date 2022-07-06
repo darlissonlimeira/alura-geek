@@ -1,14 +1,6 @@
-.info-container {
-  padding: 3rem 0;
-}
-
-.about {
-  padding: 1rem;
-}
-
 .about__title {
   text-align: center;
-  margin: 2rem;
+  margin: 4rem;
   display: grid;
   place-items: center;
 }
@@ -18,19 +10,15 @@
 }
 
 .about__item {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   font-size: 1.75rem;
   text-align: center;
 }
 
-.contact {
-  padding: 1rem;
-}
-
 .contact__title {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-weight: 600;
-  margin: 3rem 0;
+  margin-top: 5rem;
 }
 
 .form__control {
@@ -64,12 +52,12 @@
 }
 
 .copyright {
-  padding: 3rem 0;
+  padding: 1rem 0;
   font-size: 1.75rem;
   text-align: center;
   background-color: #fff;
 }
 
 .copyright p {
-  margin: 1rem 0;
+  margin-top: 1rem;
 }

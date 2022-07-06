@@ -5,11 +5,6 @@
 
   .header__login-button {
     order: 2;
-    margin-left: auto;
-  }
-
-  .header__search {
-    margin-right: auto;
   }
 
   .hero__container {
