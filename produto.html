@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Alura Geek</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="row header__container">
+          <h1 class="header__title" aria-label="Alura Geek">
+            <a href="index.html">
+              <img
+                class="header__logo"
+                aria-label="Alura Geek"
+                src="./assets/img/Logo.svg"
+                alt="Logo alura geek"
+              />
+            </a>
+          </h1>
+        </div>
+      </header>
+
+      <main>
+        <section class="product-details">
+          <div class="product-details__container">
+            <img
+              class="product-details__img"
+              src="./assets/img/products/trooper.jpg"
+              alt=""
+            />
+
+            <div class="row product-details__info">
+              <h1 class="product-details__name">Caneca Stormtrooper</h1>
+              <h2 class="product-details__price">R$ 60,00</h2>
+              <p class="product-details__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur expedita quae nam nemo quia minima id amet
+                laudantium assumenda necessitatibus voluptate cupiditate natus
+                minus reprehenderit eius ipsa, libero tempora possimus?
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="related-products">
+          <div class="row related-products__container">
+            <header class="related-products__header">
+              <h3 class="related-products__title">Produtos similares</h3>
+            </header>
+
+            <ul class="product__list">
+              <li class="product__item">
+                <div class="product__card">
+                  <figure>
+                    <img
+                      class="product__img"
+                      src="assets/img/products/copo.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="product__info">
+                    <h3 class="product__title">Copo Stormtrooper</h3>
+                    <h4 class="product__price">R$ 60,00</h4>
+                  </div>
+                  <a class="product__link" href="">Ver produto</a>
+                </div>
+              </li>
+
+              <li class="product__item">
+                <div class="product__card">
+                  <figure>
+                    <img
+                      class="product__img"
+                      src="assets/img/products/vader_home.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="product__info">
+                    <h3 class="product__title">
+                      Lego Dart Vader + Tie Figher Pilot
+                    </h3>
+                    <h4 class="product__price">R$ 120,00</h4>
+                  </div>
+                  <a class="product__link" href="">Ver produto</a>
+                </div>
+              </li>
+
+              <li class="product__item">
+                <div class="product__card">
+                  <figure>
+                    <img
+                      class="product__img"
+                      src="assets/img/products/yoda2_home.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="product__info">
+                    <h3 class="product__title">Boneco Yoda</h3>
+                    <h4 class="product__price">R$ 60,00</h4>
+                  </div>
+                  <a class="product__link" href="">Ver produto</a>
+                </div>
+              </li>
+
+              <li class="product__item">
+                <div class="product__card">
+                  <figure>
+                    <img
+                      class="product__img"
+                      src="assets/img/products/trooper_home.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="product__info">
+                    <h3 class="product__title">Boneco Yoda</h3>
+                    <h4 class="product__price">R$ 60,00</h4>
+                  </div>
+                  <a class="product__link" href="">Ver produto</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__info">
+          <div class="row info-container">
+            <!-- about -->
+            <section class="about">
+              <div class="">
+                <h2 class="about__title">
+                  <img
+                    aria-label="Alura Geek"
+                    src="./assets/img/Logo.svg"
+                    alt="Logo alura geek"
+                    class="about__logo"
+                  />
+                </h2>
+                <ul class="about__links">
+                  <li class="about__item">
+                    <a class="about__link" href="#">Quem somos nós</a>
+                  </li>
+                  <li class="about__item">
+                    <a class="about__link" href="#">Política de privacidade</a>
+                  </li>
+                  <li class="about__item">
+                    <a class="about__link" href="#">Programa de fidelidade</a>
+                  </li>
+                  <li class="about__item">
+                    <a class="about__link" href="#">Nossas lojas</a>
+                  </li>
+                  <li class="about__item">
+                    <a class="about__link" href="#">Quero ser franqueado</a>
+                  </li>
+                  <li class="about__item">
+                    <a class="about__link" href="#">Anuncie aqui</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- Contact -->
+            <section class="contact">
+              <div class="">
+                <h2 class="contact__title">Fale conosco</h2>
+                <form class="contact__form">
+                  <div class="form__control">
+                    <label class="form__label" for="">Nome</label>
+                    <input
+                      class="form__input"
+                      type="text"
+                      placeholder="Seu nome"
+                    />
+                  </div>
+                  <div class="form__control">
+                    <label class="form__label" for="">Mensagem</label>
+                    <textarea
+                      class="form__input"
+                      rows="5"
+                      placeholder="Escreva sua mensagem"
+                    ></textarea>
+                  </div>
+                  <button class="button button-primary" type="submit">
+                    Enviar mensagem
+                  </button>
+                </form>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <section class="copyright">
+          <div class="row">
+            <h2>Desenvolvido por Darlisson L. Silva</h2>
+            <p>&copy; 2022</p>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>

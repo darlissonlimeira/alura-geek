@@ -5,6 +5,7 @@
 
 .header__container {
   display: grid;
+  height: 100%;
   gap: 1rem;
   grid-template-columns: 1fr auto;
   grid-template-rows: repeat(2, auto);
@@ -42,14 +43,10 @@
   background-color: #eee;
 }
 
-.header__search:focus-visible {
-}
-
 .search {
   width: 100%;
   height: 100%;
   padding-left: 0.75rem;
-  /* outline: transparent; */
   font-size: 1.75rem;
 }
 

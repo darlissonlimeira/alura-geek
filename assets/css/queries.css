@@ -1,4 +1,8 @@
 @media screen and (min-width: 768px) {
+  .row {
+    padding: 1.5rem 2rem;
+  }
+
   .header__container {
     display: flex;
   }
@@ -25,6 +29,10 @@
     flex: 1;
   }
 
+  .about__item {
+    text-align: start;
+  }
+
   .contact {
     padding-right: 5rem;
   }
@@ -34,10 +42,29 @@
     max-width: 400px;
     margin: 0 auto;
   }
+
+  .product-details__container {
+    display: flex;
+    padding: 0 2rem;
+    align-items: center;
+  }
+
+  .product-details__img {
+    display: flex;
+    width: auto;
+    height: 200px;
+  }
+
+  .product-details__info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
 }
 
 @media screen and (min-width: 1100px) {
-  .row {
+  .row,
+  .product-details__container {
     width: 980px;
     margin: 0 auto;
   }

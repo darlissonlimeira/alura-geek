@@ -16,4 +16,6 @@
 
 @import "./products/products-admin.css";
 
+@import "./products/product-details.css";
+
 @import "./queries.css";

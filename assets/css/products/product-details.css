@@ -1,0 +1,31 @@
+.product-details__img {
+  width: 100%;
+}
+
+.product-details__info {
+  padding: 0 1.5rem;
+}
+
+.product-details__name {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+
+.product-details__price {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 1.5rem 0;
+}
+
+.product-details__description {
+  font-size: 1.5rem;
+  line-height: 140%;
+  letter-spacing: 0.02rem;
+}
+
+.related-products__title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 2rem 0;
+}
