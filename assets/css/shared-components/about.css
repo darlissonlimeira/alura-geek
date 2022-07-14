@@ -13,6 +13,12 @@
   margin-bottom: 2.5rem;
   font-size: 1.75rem;
   text-align: center;
+  color: #777;
+}
+
+.contact__container {
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 .contact__title {
@@ -22,7 +28,7 @@
 }
 
 .form__control {
-  margin: 2rem 0;
+  margin: 3rem 0;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -30,25 +36,27 @@
 
 .form__label {
   font-size: 1.75rem;
-  font-weight: 500;
-  color: var(--blue);
+  font-weight: 600;
+  color: var(--black);
 }
 
 .form__input {
   background-color: #fff;
   padding: 2rem 0.5rem 1rem 0.5rem;
   border-radius: 5px;
-  border: 2px solid var(--blue);
+  border: 2px solid #333;
   transition: all 0.2s ease;
   outline: 4px solid transparent;
 }
 
 .form__input:focus {
-  outline: 4px solid rgba(0, 110, 255, 0.2);
+  border-color: #eb2e24;
+  outline: 3px solid rgba(235, 46, 36, 0.2);
 }
 
 .form__input::placeholder {
   font-size: 1.75rem;
+  color: #777;
 }
 
 .copyright {

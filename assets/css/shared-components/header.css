@@ -6,7 +6,7 @@
 .header__container {
   display: grid;
   height: 100%;
-  gap: 1rem;
+  /* gap: 2rem; */
   grid-template-columns: 1fr auto;
   grid-template-rows: repeat(2, auto);
   grid-template-areas:
@@ -30,7 +30,10 @@
   grid-area: login-button;
   align-self: center;
   font-weight: 500;
-  font-size: 1.75rem;
+  font-size: 2rem;
+  padding: 0 1rem;
+
+  color: #eb2e24;
 }
 
 .header__search {
@@ -40,7 +43,14 @@
   min-width: 50%;
   padding: 0.75rem 1rem;
   border-radius: 25px;
-  background-color: #eee;
+  /* background-color: #eee; */
+
+  border: 2px solid #333;
+  margin: 2rem 0 1rem 0;
+}
+
+.header__search:focus {
+  border-color: re;
 }
 
 .search {
@@ -61,5 +71,6 @@
 
 .button-search svg {
   width: 90%;
-  stroke: #999;
+  stroke: #333;
+  /* stroke: rgb(235, 46, 36); */
 }

@@ -53,6 +53,7 @@
     display: flex;
     width: auto;
     height: 200px;
+    border-radius: 10px;
   }
 
   .product-details__info {

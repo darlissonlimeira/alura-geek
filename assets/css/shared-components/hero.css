@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .hero::after {
@@ -19,7 +19,7 @@
 
 .hero__container {
   display: flex;
-  height: 250px;
+  height: 300px;
   flex-direction: column;
   justify-content: flex-end;
 }
@@ -31,8 +31,9 @@
 }
 
 .hero__title {
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: 4rem;
+  font-weight: 700;
+  color: rgb(235, 46, 36);
 }
 
 .hero__subtitle {
@@ -42,7 +43,7 @@
 
 .hero__button {
   width: fit-content;
-  background-color: var(--blue);
+  background-color: rgb(235, 46, 36);
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }

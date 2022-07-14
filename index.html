@@ -4,14 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
+    <meta
+      name="description"
+      content="DRKTeck - Project from ONE Education and Alura."
     />
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+      rel="preload"
+      as="style"
+    />
+    <link
+      href="assets/img/hero.jpg"
+      rel="preload"
+      as="image"
+      type="image/jpg"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <title>Alura Geek</title>
   </head>
   <body>
@@ -23,23 +33,33 @@
               <img
                 class="header__logo"
                 aria-label="Alura Geek"
-                src="./assets/img/Logo.svg"
+                src="./assets/img/Logo2.svg"
                 alt="Logo alura geek"
               />
             </a>
           </h1>
-          <a
-            class="header__login-button button button-secondary"
-            href="login.html"
-            >Login</a
-          >
+          <a class="header__login-button" href="login.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="button-icon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Login
+          </a>
           <div class="header__search">
             <input
               class="search"
               type="search"
               placeholder="O que você deseja encontrar?"
             />
-            <button class="button-search">
+            <button aria-label="Search" class="button-search">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-6 w-6"
@@ -79,7 +99,7 @@
           <div class="row category__container">
             <header class="category__header">
               <h2 class="category__title">Star Wars</h2>
-              <a class="category___all-button"
+              <a class="category___all-button" href="#"
                 >Ver tudo
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -174,7 +194,7 @@
           <div class="row category__container">
             <header class="category__header">
               <h2 id="consoles-category" class="category__title">Consoles</h2>
-              <a class="category___all-button"
+              <a class="category___all-button" href="#"
                 >Ver tudo
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -267,7 +287,7 @@
           <div class="row category__container">
             <header class="category__header">
               <h2 class="category__title">Diversos</h2>
-              <a class="category___all-button"
+              <a class="category___all-button" href="#"
                 >Ver tudo
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -360,11 +380,11 @@
           <div class="row info-container">
             <!-- about -->
             <section class="about">
-              <div class="">
+              <div class="about__container">
                 <h2 class="about__title">
                   <img
                     aria-label="Alura Geek"
-                    src="./assets/img/Logo.svg"
+                    src="./assets/img/Logo2.svg"
                     alt="Logo alura geek"
                     class="about__logo"
                   />
@@ -394,7 +414,7 @@
 
             <!-- Contact -->
             <section class="contact">
-              <div class="">
+              <div class="contact__container">
                 <h2 class="contact__title">Fale conosco</h2>
                 <form class="contact__form">
                   <div class="form__control">

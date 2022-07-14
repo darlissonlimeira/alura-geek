@@ -5,6 +5,8 @@
   --stantard-fontsize: 1.5rem;
 
   --blue: #2a7ae4;
+  --gray-800: #aaa;
+  --gray-600: #888;
   --black-8: #3e3e3e;
   --black-9: #2e2e2e;
   --orange: rgb(255, 115, 0);
@@ -23,13 +25,13 @@ html {
 
 body {
   background-color: #fefefe;
+  color: #333;
 }
 
 body,
 input::placeholder,
 textarea::placeholder {
   font-size: var(--stantard-fontsize);
-  color: var(--black-8);
 }
 
 a,
@@ -41,6 +43,7 @@ textarea {
   background: none;
   text-decoration: none;
   outline: transparent;
+  resize: none;
 }
 
 a:visited,
@@ -53,12 +56,14 @@ a:link {
 a,
 button {
   cursor: pointer;
+  color: inherit;
 }
 
 svg {
   stroke: #555;
   width: 38px;
-  height: 38px;
+  height: auto;
+  max-height: 38px;
 }
 
 .row {
@@ -66,23 +71,28 @@ svg {
 }
 
 .button {
-  padding: 1.5rem 2rem;
-  border: 2px solid transparent;
   font-weight: 500;
-  border-radius: 5px;
   width: fit-content;
+
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
 
   box-shadow: 0 0 1px 1px rgba(0, 102, 255, 0.05);
 }
 
 .button-primary {
-  background-color: var(--blue);
+  background-color: #222;
   color: #efefef;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.75rem;
+  box-shadow: 1px 10px 10px -10px rgba(0, 0, 0, 0.345);
+  transition: background 0.2s ease;
 }
 
 .button-secondary {
-  border-color: var(--blue);
-  color: var(--blue);
+  /* color: var(--blue); */
 }
 
 .button-icon {

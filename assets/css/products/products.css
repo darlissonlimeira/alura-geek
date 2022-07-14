@@ -21,12 +21,14 @@
 
 .product__img {
   border-radius: 10px;
-  margin-bottom: 1rem;
+  box-shadow: 1px 10px 10px -10px rgba(0, 0, 0, 0.345);
 }
 
 .product__title {
-  font-size: 1.75rem;
+  font-size: 2rem;
+  margin: 1.5rem 0;
   overflow-wrap: break-word;
+  color: #555;
 }
 
 .product__price {
@@ -34,12 +36,15 @@
   font-weight: 500;
   flex: 1;
 
-  background-color: var(--blue);
+  /* background-color: var(--black-9); */
+  background-color: rgb(235, 46, 36);
+
   width: fit-content;
   border-radius: 5px;
-  color: #eaeaea;
+  color: #f2f2f2;
   padding: 0.5rem 0.75rem;
-  box-shadow: 0 0 2px 2px rgba(0, 102, 255, 0.1);
+
+  box-shadow: 1px 10px 10px -10px rgba(0, 0, 0, 0.345);
 
   position: absolute;
   right: 0;
@@ -47,7 +52,7 @@
 }
 
 .product__link {
-  color: var(--blue);
+  color: var(--black-9);
   font-size: 1.5rem;
   font-weight: 600;
   margin: 1rem 0;

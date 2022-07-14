@@ -1,3 +1,7 @@
+.related-products {
+  margin-top: 4rem;
+}
+
 .product-details__img {
   width: 100%;
 }
@@ -27,5 +31,5 @@
 .related-products__title {
   font-size: 2.5rem;
   font-weight: 600;
-  margin: 2rem 0;
+  margin: 4rem 0;
 }
