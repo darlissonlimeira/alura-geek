@@ -4,9 +4,8 @@
 }
 
 .header__container {
-  display: grid;
   height: 100%;
-  /* gap: 2rem; */
+  display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: repeat(2, auto);
   grid-template-areas:
@@ -31,7 +30,7 @@
   align-self: center;
   font-weight: 500;
   font-size: 2rem;
-  padding: 0 1rem;
+  margin-left: 2rem;
 
   color: #eb2e24;
 }
@@ -43,7 +42,6 @@
   min-width: 50%;
   padding: 0.75rem 1rem;
   border-radius: 25px;
-  /* background-color: #eee; */
 
   border: 2px solid #333;
   margin: 2rem 0 1rem 0;
