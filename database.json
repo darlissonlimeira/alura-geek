@@ -1,0 +1,196 @@
+{
+  "sellers": [
+    {
+      "id": "1",
+      "email": "fakeadmin@email.com",
+      "password": "12345"
+    }
+  ],
+  "categories": [
+    { "name": "Star Wars" },
+    { "name": "Consoles" },
+    { "name": "Diversos" }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "sellerId": "1",
+      "images": {
+        "sm": "../../assets/img/products/copo-sm.jpg",
+        "lg": "../../assets/img/products/copo-lg.avif"
+      },
+      "name": "Copo Stormtrooper",
+      "price": "60,00",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquid fuga officia! Ullam beataeodit perspiciatis quos officiis perferendis quod doloremque. Dolores nostrum vel quo veritatis,incidunt quam vitae minus?",
+      "category": "Star Wars"
+    },
+    {
+      "id": "21",
+      "sellerId": "1",
+      "images": {
+        "sm": "../../assets/img/products/yoda-sm.jpg",
+        "lg": "../../assets/img/products/yoda-lg.jpg"
+      },
+      "name": "Boneco Yoda 2",
+      "price": "60,00",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquid fuga officia! Ullam beataeodit perspiciatis quos officiis perferendis quod doloremque. Dolores nostrum vel quo veritatis,incidunt quam vitae minus?",
+      "category": "Star Wars"
+    },
+    {
+      "id": "2",
+      "sellerId": "1",
+      "images": {
+        "sm": "../../assets/img/products/vader-sm.jpg",
+        "lg": "../../assets/img/products/vader-lg.jpg"
+      },
+      "name": "Lego Dart Vader + Tie Fighter Pilot",
+      "price": "110,00",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquid fuga officia! Ullam beataeodit perspiciatis quos officiis perferendis quod doloremque. Dolores nostrum vel quo veritatis,incidunt quam vitae minus?",
+      "category": "Star Wars"
+    },
+    {
+      "id": "3",
+      "sellerId": "1",
+      "images": {
+        "sm": "../../assets/img/products/yoda1-sm.jpg",
+        "lg": "../../assets/img/products/yoda1-lg.jpg"
+      },
+      "name": "Boneco Yoda",
+      "price": "60,00",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquid fuga officia! Ullam beataeodit perspiciatis quos officiis perferendis quod doloremque. Dolores nostrum vel quo veritatis,incidunt quam vitae minus?",
+      "category": "Star Wars"
+    },
+    {
+      "id": "4",
+      "sellerId": "1",
+      "images": {
+        "sm": "../../assets/img/products/trooper-sm.jpg",
+        "lg": "../../assets/img/products/trooper-lg.jpg"
+      },
+      "name": "Boneco Stormtrooper",
+      "price": "60,00",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquid fuga officia! Ullam beataeodit perspiciatis quos officiis perferendis quod doloremque. Dolores nostrum vel quo veritatis,incidunt quam vitae minus?",
+      "category": "Star Wars"
+    },
+    {
+      "id": "5",
+      "sellerId": "1",
+      "images": {
+        "sm": "../../assets/img/products/joystick_xbox-sm.jpg",
+        "lg": "../../assets/img/products/joystick_xbox-lg.jpg"
+      },
+      "name": "Joystick Xbox",
+      "price": "60,00",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquid fuga officia! Ullam beataeodit perspiciatis quos officiis perferendis quod doloremque. Dolores nostrum vel quo veritatis,incidunt quam vitae minus?",
+      "category": "Consoles"
+    },
+    {
+      "id": "51",
+      "sellerId": "1",
+      "images": {
+        "sm": "../../assets/img/products/vr-sm.jpg",
+        "lg": "../../assets/img/products/vr-lg.jpg"
+      },
+      "name": "Oculos VR",
+      "price": "60,00",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquid fuga officia! Ullam beataeodit perspiciatis quos officiis perferendis quod doloremque. Dolores nostrum vel quo veritatis,incidunt quam vitae minus?",
+      "category": "Consoles"
+    },
+    {
+      "id": "6",
+      "sellerId": "1",
+      "images": {
+        "sm": "../../assets/img/products/ps5-sm.jpg",
+        "lg": "../../assets/img/products/ps5-lg.jpg"
+      },
+      "name": "Playstation 5",
+      "price": "60,00",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquid fuga officia! Ullam beataeodit perspiciatis quos officiis perferendis quod doloremque. Dolores nostrum vel quo veritatis,incidunt quam vitae minus?",
+      "category": "Consoles"
+    },
+    {
+      "id": "7",
+      "sellerId": "1",
+      "images": {
+        "sm": "../../assets/img/products/nintendo-sm.jpg",
+        "lg": "../../assets/img/products/nintendo-lg.jpg"
+      },
+      "name": "Nintendo retro",
+      "price": "60,00",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquid fuga officia! Ullam beataeodit perspiciatis quos officiis perferendis quod doloremque. Dolores nostrum vel quo veritatis,incidunt quam vitae minus?",
+      "category": "Consoles"
+    },
+    {
+      "id": "8",
+      "sellerId": "1",
+      "images": {
+        "sm": "../../assets/img/products/switch-sm.jpg",
+        "lg": "../../assets/img/products/switch-lg.jpg"
+      },
+      "name": "Nintendo Switch",
+      "price": "60,00",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquid fuga officia! Ullam beataeodit perspiciatis quos officiis perferendis quod doloremque. Dolores nostrum vel quo veritatis,incidunt quam vitae minus?",
+      "category": "Consoles"
+    },
+    {
+      "id": "9",
+      "sellerId": "1",
+      "images": {
+        "sm": "../../assets/img/products/xbox-sm.jpg",
+        "lg": "../../assets/img/products/xbox-lg.jpg"
+      },
+      "name": "Xbox Series X",
+      "price": "60,00",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquid fuga officia! Ullam beataeodit perspiciatis quos officiis perferendis quod doloremque. Dolores nostrum vel quo veritatis,incidunt quam vitae minus?",
+      "category": "Consoles"
+    },
+    {
+      "id": "10",
+      "sellerId": "1",
+      "images": {
+        "sm": "../../assets/img/products/atari-sm.jpg",
+        "lg": "../../assets/img/products/atari-lg.jpg"
+      },
+      "name": "Camiseta Atari",
+      "price": "60,00",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquid fuga officia! Ullam beataeodit perspiciatis quos officiis perferendis quod doloremque. Dolores nostrum vel quo veritatis,incidunt quam vitae minus?",
+      "category": "Diversos"
+    },
+    {
+      "id": "11",
+      "sellerId": "1",
+      "images": {
+        "sm": "../../assets/img/products/snes-sm.jpg",
+        "lg": "../../assets/img/products/snes-sm.jpg"
+      },
+      "name": "Camiseta Snes",
+      "price": "60,00",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquid fuga officia! Ullam beataeodit perspiciatis quos officiis perferendis quod doloremque. Dolores nostrum vel quo veritatis,incidunt quam vitae minus?",
+      "category": "Diversos"
+    },
+    {
+      "id": "12",
+      "sellerId": "1",
+      "images": {
+        "sm": "../../assets/img/products/sonic-sm.jpg",
+        "lg": "../../assets/img/products/sonic-lg.jpg"
+      },
+      "name": "Boneco Sonic",
+      "price": "60,00",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquid fuga officia! Ullam beataeodit perspiciatis quos officiis perferendis quod doloremque. Dolores nostrum vel quo veritatis,incidunt quam vitae minus?",
+      "category": "Diversos"
+    },
+    {
+      "id": "13",
+      "sellerId": "1",
+      "images": {
+        "sm": "../../assets/img/products/groot-sm.jpg",
+        "lg": "../../assets/img/products/groot-lg.jpg"
+      },
+      "name": "Boneco Groot",
+      "price": "60,00",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquid fuga officia! Ullam beataeodit perspiciatis quos officiis perferendis quod doloremque. Dolores nostrum vel quo veritatis,incidunt quam vitae minus?",
+      "category": "Diversos"
+    }
+  ]
+}
