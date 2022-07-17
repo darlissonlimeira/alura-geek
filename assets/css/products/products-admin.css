@@ -98,7 +98,6 @@
 .product__delete-button {
   padding: 0.5rem;
   height: 100%;
-  /* margin-left: auto; */
   border: 2px solid rgb(235, 46, 36, 0.9);
   background-color: rgb(235, 46, 36, 0.9);
 }
@@ -106,7 +105,11 @@
 .product__delete-button svg {
   stroke: none;
   fill: #efefef;
-  /* fill: rgb(235, 46, 36); */
   width: 30px;
   height: auto;
+}
+
+.remove {
+  transition: all 0.5s ease;
+  opacity: 0;
 }

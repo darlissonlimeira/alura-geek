@@ -11,9 +11,5 @@ form.addEventListener("submit", (event) => {
 
   if (!authData) return;
 
-  const baseURL = window.location.origin;
-  const myProductsURL = new URL("/meus-produtos.html", baseURL);
-  myProductsURL.search = `seller=${authData.loggedIn.id}`;
-
-  window.location.replace(myProductsURL);
+  window.location.href = "/auth.html";
 });
