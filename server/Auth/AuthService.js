@@ -6,10 +6,12 @@ class AuthService {
   }
 
   signIn(email, password) {
-    const seller = this.#sellerService.findOne(sellerEmail);
+    const seller = this.#sellerService.findOne(email);
 
     if (!seller || seller.email !== email || seller.password !== password) {
-      throw "Email or password wrong.";
+      return {
+        loggedIn: null,
+      };
     }
 
     const signInData = {
@@ -17,7 +19,7 @@ class AuthService {
       email: seller.email,
     };
 
-    localStorage.setItem("drkteck-session", JSON.stringify(signInData));
+    localStorage.setItem("DRKTECK_SESSION", JSON.stringify(signInData));
 
     return {
       loggedIn: signInData,
@@ -25,7 +27,7 @@ class AuthService {
   }
 
   signOut() {
-    localStorage.removeItem("drkteck-session");
+    localStorage.removeItem("DRKTECK_SESSION");
 
     return {
       loggedIn: null,

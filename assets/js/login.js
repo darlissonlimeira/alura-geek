@@ -1,10 +1,19 @@
+import { authService } from "../../server/main.js";
+
 const form = document.querySelector("#login-form");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const url = window.location.href.replace("login.html", "meus-produtos.html");
-  window.location.replace(url);
+  const formData = new FormData(form);
+  const [email, password] = Array.from(formData.values());
+  const authData = authService.signIn(email, password);
 
-  return;
+  if (!authData) return;
+
+  const baseURL = window.location.origin;
+  const myProductsURL = new URL("/meus-produtos.html", baseURL);
+  myProductsURL.search = `seller=${authData.loggedIn.id}`;
+
+  window.location.replace(myProductsURL);
 });

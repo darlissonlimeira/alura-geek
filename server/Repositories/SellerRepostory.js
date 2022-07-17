@@ -12,8 +12,8 @@ class SellerRepository {
     this.#storageDB.updateData("products", this.#sellers);
   }
 
-  findOne(sellerEmail) {
-    return this.#storageDB.find((seller) => seller.email === sellerEmail);
+  findOne(email) {
+    return this.#sellers.find((seller) => seller.email === email);
   }
 }
 

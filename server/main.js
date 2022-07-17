@@ -4,7 +4,7 @@ import { CategoryRepository } from "./Repositories/CategoryRepositoy.js";
 import { ProductRepository } from "./Repositories/ProductRepository.js";
 import { CategoryService } from "./Services/CategoryService.js";
 import { ProductService } from "./Services/ProductService.js";
-import { AuthService } from "./Services/AuthService.js";
+import { AuthService } from "./Auth/AuthService.js";
 import { SellerRepository } from "./Repositories/SellerRepostory.js";
 import { SellerService } from "./Services/SellerService.js";
 
