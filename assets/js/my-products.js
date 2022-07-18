@@ -9,7 +9,7 @@ const sellerId = new URLSearchParams(window.location.search).get("seller");
 const renderProducts = () => {
   const productsHTML = productService
     .findAll()
-    .filter((product) => product.sellerId === sellerId)
+    .filter((product) => product.seller === sellerId)
     .map((product) => templateManagerProduct(product))
     .join("");
 

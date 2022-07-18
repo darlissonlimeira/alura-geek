@@ -1,6 +1,6 @@
 :root {
   font-size: 62.5%;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 
   --stantard-fontsize: 1.5rem;
 
@@ -44,6 +44,11 @@ textarea {
   text-decoration: none;
   outline: transparent;
   resize: none;
+}
+
+input,
+textarea {
+  font-size: 1.75rem;
 }
 
 a:visited,

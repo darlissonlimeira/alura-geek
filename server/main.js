@@ -17,6 +17,6 @@ const sellerRepository = new SellerRepository(storageService);
 const categoryService = new CategoryService(categoryRepository);
 const productService = new ProductService(productRepository);
 const sellerService = new SellerService(sellerRepository);
-const authService = new AuthService(sellerService);
+const authService = new AuthService(sellerRepository);
 
-export { categoryService, productService, authService };
+export { categoryService, productService, authService, sellerService };

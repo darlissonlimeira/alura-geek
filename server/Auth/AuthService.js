@@ -1,12 +1,12 @@
 class AuthService {
-  #sellerService;
+  #sellerRepository;
 
-  constructor(sellerService) {
-    this.#sellerService = sellerService;
+  constructor(sellerRepository) {
+    this.#sellerRepository = sellerRepository;
   }
 
   signIn(email, password) {
-    const seller = this.#sellerService.findOne(email);
+    const seller = this.#sellerRepository.findOne(email);
 
     if (!seller || seller.email !== email || seller.password !== password) {
       return {
@@ -17,6 +17,7 @@ class AuthService {
     const signInData = {
       id: seller.id,
       email: seller.email,
+      name: seller.name,
     };
 
     localStorage.setItem("DRKTECK_SESSION", JSON.stringify(signInData));

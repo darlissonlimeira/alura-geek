@@ -1,6 +1,9 @@
-const session = JSON.parse(localStorage.getItem("DRKTECK_SESSION"));
+import { sellerService } from "./main.js";
 
-if (session) {
+const session = JSON.parse(localStorage.getItem("DRKTECK_SESSION"));
+const sellerExists = session && sellerService.findOne(session.email);
+
+if (session && sellerExists) {
   const baseURL = window.location.origin;
   const myProductsURL = new URL("/meus-produtos.html", baseURL);
   myProductsURL.search = `seller=${session.id}`;

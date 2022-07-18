@@ -10,7 +10,15 @@ class SellerService {
   }
 
   findOne(sellerEmail) {
-    return this.#repository.findOne(sellerEmail);
+    const { id, email, name } = this.#repository.findOne(sellerEmail);
+
+    const seller = {
+      id,
+      email,
+      name,
+    };
+
+    return seller;
   }
 }
 

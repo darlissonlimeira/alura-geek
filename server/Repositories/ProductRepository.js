@@ -10,11 +10,14 @@ class ProductRepository {
   save(product) {
     this.#products.push(product);
 
+    console.log(this.#products);
     this.#storageDB.updateData("products", this.#products);
   }
 
   destroy(productId) {
-    const updatedProducts = this.#products.filter((product) => product.id !== productId);
+    const updatedProducts = this.#products.filter(
+      (product) => product.id !== productId
+    );
     this.#products = updatedProducts;
 
     this.#storageDB.updateData("products", this.#products);

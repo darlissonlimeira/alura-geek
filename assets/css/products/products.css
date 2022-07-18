@@ -22,6 +22,8 @@
 .product__img {
   border-radius: 10px;
   box-shadow: 1px 10px 10px -10px rgba(0, 0, 0, 0.345);
+  width: 174px;
+  height: 176px;
 }
 
 .product__title {

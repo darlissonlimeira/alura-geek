@@ -5,9 +5,11 @@
 }
 
 .login__title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 600;
-  margin-bottom: 3rem;
+  margin: 5rem 0 8rem 0;
+
+  text-align: center;
 }
 
 .login .form__input {

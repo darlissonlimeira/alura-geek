@@ -1,17 +1,28 @@
 class Product {
-  #uri;
+  #images = {};
   #category;
   #name;
   #price;
   #description;
   #id;
+  #seller;
 
-  constructor({ name, uri, category, price, description }) {
-    this.#uri = uri;
+  constructor({
+    name,
+    imageSm,
+    imageLg,
+    category,
+    price,
+    description,
+    seller,
+  }) {
+    this.#images.sm = imageSm;
+    this.#images.lg = imageLg;
     this.#category = category;
     this.#name = name;
     this.#price = price;
     this.#description = description;
+    this.#seller = seller;
     this.#id = String(Date.now() + Math.random());
   }
 
@@ -19,8 +30,8 @@ class Product {
     return this.#id;
   }
 
-  getURI() {
-    return this.#uri;
+  getImages() {
+    return this.#images;
   }
 
   getCategory() {
@@ -37,6 +48,26 @@ class Product {
 
   getDescription() {
     return this.#description;
+  }
+
+  getImages() {
+    return this.#images;
+  }
+
+  getSeller() {
+    return this.#seller;
+  }
+
+  toJSON() {
+    return {
+      images: this.getImages(),
+      category: this.getCategory(),
+      name: this.getName(),
+      price: this.getPrice(),
+      description: this.getDescription(),
+      id: this.getID(),
+      seller: this.getSeller(),
+    };
   }
 }
 

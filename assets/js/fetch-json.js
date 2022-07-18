@@ -31,7 +31,7 @@ const fetchDataJSON = async () => {
   mockData({ categories, products, sellers });
 };
 
-fetchDataJSON();
+!localStorage.getItem("DRKTECK_DB") && fetchDataJSON();
 
 const fetchData = () => {
   const products = productService.findAll();

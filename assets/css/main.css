@@ -20,4 +20,6 @@
 
 @import "./products/product-details.css";
 
+@import "./create-product/create-product.css";
+
 @import "./queries.css";
