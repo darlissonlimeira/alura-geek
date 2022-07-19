@@ -6,8 +6,7 @@ const loginBtn = document.querySelector(".header__login-button");
 
 document.addEventListener("DOMContentLoaded", () => {
   const session = JSON.parse(localStorage.getItem("DRKTECK_SESSION"));
-
-  loginBtn.textContent = session.name;
+  session && (loginBtn.textContent = session.name);
 });
 
 const createCategoriesHTML = (categories) => {

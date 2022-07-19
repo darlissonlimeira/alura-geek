@@ -10,8 +10,6 @@ class ProductService {
 
     // if (productExists) throw "Esse produto já existe na base de dados.";
 
-    console.log(productExists);
-
     this.#repository.save(product);
   }
 

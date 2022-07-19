@@ -7,8 +7,14 @@
     display: flex;
   }
 
-  .header__login-button {
+  .header__login-button,
+  .header__logout-form {
     order: 2;
+  }
+
+  .header__logout-button {
+    display: flex;
+    align-items: center;
   }
 
   .hero__container {
@@ -69,5 +75,22 @@
   .product-details__container {
     width: 980px;
     margin: 0 auto;
+  }
+
+  .hero__container {
+    height: 400px;
+  }
+
+  .product__list {
+    overflow-x: visible;
+    flex-wrap: wrap;
+  }
+
+  .img-container {
+    height: auto;
+  }
+
+  .h-product__list .product__card {
+    padding: 1rem;
   }
 }

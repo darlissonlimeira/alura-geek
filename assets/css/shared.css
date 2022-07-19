@@ -76,14 +76,12 @@ svg {
 }
 
 .button {
-  font-weight: 500;
-  width: fit-content;
-
   display: flex;
+  width: fit-content;
   align-items: center;
-
+  font-weight: 500;
   gap: 1rem;
-
+  border-radius: 5px;
   box-shadow: 0 0 1px 1px rgba(0, 102, 255, 0.05);
 }
 

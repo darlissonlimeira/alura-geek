@@ -3,12 +3,16 @@ class Category {
 
   constructor(name) {
     this.#name = name;
-
-    Object.freeze(this);
   }
 
   getName() {
     return this.#name;
+  }
+
+  toJSON() {
+    return {
+      name: this.getName(),
+    };
   }
 }
 

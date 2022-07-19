@@ -24,14 +24,10 @@ class ProductRepository {
   }
 
   update(productData) {
-    for (const product of this.#products) {
-      if (product.id === productData.id) {
-        product = {
-          ...productData,
-        };
-        break;
-      }
-    }
+    const index = this.#products.findIndex(
+      (product) => product.id === productData.getID()
+    );
+    this.#products[index] = productData;
 
     this.#storageDB.updateData("products", this.#products);
   }

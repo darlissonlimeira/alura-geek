@@ -25,9 +25,14 @@
   height: 38px;
 }
 
-.header__login-button {
+.header__login-button,
+.header__logout-form {
   grid-area: login-button;
   align-self: center;
+}
+
+.header__login-button,
+.header__logout-button {
   font-weight: 500;
   font-size: 2rem;
   margin-left: 2rem;

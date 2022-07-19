@@ -15,6 +15,7 @@ class Product {
     price,
     description,
     seller,
+    id,
   }) {
     this.#images.sm = imageSm;
     this.#images.lg = imageLg;
@@ -23,7 +24,7 @@ class Product {
     this.#price = price;
     this.#description = description;
     this.#seller = seller;
-    this.#id = String(Date.now() + Math.random());
+    this.#id = id || String(Date.now() + Math.random());
   }
 
   getID() {

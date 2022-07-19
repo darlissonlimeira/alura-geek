@@ -2,8 +2,15 @@
   margin-top: 4rem;
 }
 
+.img-container {
+  /* height: 500px; */
+  /* width: 100%; */
+  overflow: hidden;
+}
+
 .product-details__img {
   width: 100%;
+  display: block;
 }
 
 .product-details__info {

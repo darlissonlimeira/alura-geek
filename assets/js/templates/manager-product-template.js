@@ -12,7 +12,7 @@ const templateManagerProduct = (product) => {
 
       <div class="product__data">
         <div class="product__control">
-          <a class="product__edit-button" href="#"
+          <a class="product__edit-button" href="/novo-produto.html?productId=${product.id}"
           >Editar produto</a>
           <form class="product__form-delete" data-id="${product.id}">
             <button class="product__delete-button" data-label="Excluir produto">

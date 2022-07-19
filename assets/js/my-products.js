@@ -42,3 +42,12 @@ productItems.forEach((item) => {
     });
   });
 });
+
+// alert(
+//   productService
+//     .findAll()
+//     .map((p) => p.name)
+//     .reduce((acc, curr) => acc + curr, "") +
+//     "sellerId:" +
+//     sellerId
+// );

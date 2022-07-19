@@ -7,16 +7,20 @@ class CategoryService {
     this.#repository = categoryRepository;
   }
 
-  save(category) {
-    if (!hasValidName(category.getName())) throw "Not a valid category name.";
+  create(category) {
+    if (!hasValidName(category.name)) throw "Not a valid category name.";
 
-    const categoryExists = this.#repository.findByName(category.name);
+    const categoryExists = this.#repository.findOne(category.name);
 
-    if (!categoryExists) {
-      this.#repository.save(category);
+    if (categoryExists) {
+      return;
     }
 
-    return category.name;
+    this.#repository.create(category);
+  }
+
+  findOne(name) {
+    return this.#repository().findOne(name);
   }
 
   findAll() {

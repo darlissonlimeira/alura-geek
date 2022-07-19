@@ -7,16 +7,23 @@ class CategoryRepository {
     this.#categories = this.#storageDB.getData("categories");
   }
 
-  findByName(categoryname) {
-    return this.#categories.find((category) => category.name === categoryname);
+  findOne(name) {
+    return this.#categories.find((category) => category.name === name);
   }
 
   findAll() {
     return this.#categories;
   }
 
-  save(category) {
+  create(category) {
+    const categoryExists = this.findOne(category.name);
+
+    if (categoryExists) {
+      return;
+    }
+
     this.#categories.push(category);
+    this.#storageDB.updateData("categories", this.#categories);
   }
 }
 
