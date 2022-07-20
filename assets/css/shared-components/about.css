@@ -12,11 +12,7 @@
   margin-bottom: 2.5rem;
   font-size: 1.75rem;
   text-align: center;
-  color: #777;
-}
-
-.contact {
-  /* margin: 5rem 0; */
+  color: var(--text-color-3);
 }
 
 .contact__container {
@@ -42,33 +38,32 @@
 .form__label {
   font-size: 1.75rem;
   font-weight: 600;
-  color: var(--black);
+  color: var(--text-color-1);
 }
 
 .form__input {
   background-color: #fff;
   padding: 2rem 0.5rem 1rem 0.5rem;
   border-radius: 5px;
-  border: 2px solid #333;
+  border: var(--border);
   transition: all 0.2s ease;
   outline: 4px solid transparent;
 }
 
 .form__input:focus {
-  border-color: #eb2e24;
+  border-color: var(--warning);
   outline: 3px solid rgba(235, 46, 36, 0.2);
 }
 
 .form__input::placeholder {
   font-size: 1.75rem;
-  color: #777;
+  color: var(--text-color-3);
 }
 
 .copyright {
   padding: 5rem 0;
   font-size: 1.75rem;
   text-align: center;
-  background-color: #fff;
 }
 
 .copyright p {

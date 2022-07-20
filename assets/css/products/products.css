@@ -21,7 +21,7 @@
 
 .product__img {
   border-radius: 10px;
-  box-shadow: 1px 10px 10px -10px rgba(0, 0, 0, 0.345);
+  box-shadow: var(--shadow);
   width: 174px;
   height: 176px;
 }
@@ -30,21 +30,22 @@
   font-size: 2rem;
   margin: 1.5rem 0;
   overflow-wrap: break-word;
-  color: #555;
+  color: var(--text-color-3);
+  line-height: 135%;
 }
 
 .product__price {
   font-size: 2rem;
   font-weight: 500;
   flex: 1;
-  background-color: rgb(235, 46, 36);
+  background-color: var(--warning);
 
   width: fit-content;
   border-radius: 5px;
-  color: #f2f2f2;
+  color: var(--text-color-4);
   padding: 0.5rem 0.75rem;
 
-  box-shadow: 1px 10px 10px -10px rgba(0, 0, 0, 0.345);
+  box-shadow: var(--shadow);
 
   position: absolute;
   right: 0;

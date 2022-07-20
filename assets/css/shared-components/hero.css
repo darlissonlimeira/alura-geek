@@ -27,24 +27,23 @@
 .hero__title,
 .hero__subtitle {
   margin: 2rem 0;
-  color: #eee;
 }
 
 .hero__title {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 700;
-  /* color: rgb(235, 46, 36); */
-  color: rgb(255 182 6);
+  color: var(--text-color-5);
 }
 
 .hero__subtitle {
   font-size: 2rem;
   font-weight: 500;
+  color: var(--text-color-4);
 }
 
 .hero__button {
   width: fit-content;
-  background-color: rgb(235, 46, 36);
+  background-color: var(--warning);
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }

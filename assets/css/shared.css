@@ -4,12 +4,16 @@
 
   --stantard-fontsize: 1.5rem;
 
-  --blue: #2a7ae4;
-  --gray-800: #aaa;
-  --gray-600: #888;
-  --black-8: #3e3e3e;
-  --black-9: #2e2e2e;
-  --orange: rgb(255, 115, 0);
+  --warning: rgb(235, 46, 36);
+  --primary: #222;
+  --text-color-1: #222;
+  --text-color-2: rgb(235, 46, 36);
+  --text-color-3: #444;
+  --text-color-4: #fcfcfc;
+  --text-color-5: rgb(255 182 6);
+
+  --border: 2px solid #222;
+  --shadow: 1px 10px 10px -10px rgba(0, 0, 0, 0.345);
 }
 
 html {
@@ -24,8 +28,8 @@ html {
 }
 
 body {
-  background-color: #fefefe;
-  color: #333;
+  background-color: #fcfcfc;
+  color: var(--text-color-3);
 }
 
 body,
@@ -65,7 +69,7 @@ button {
 }
 
 svg {
-  stroke: #555;
+  stroke: var(--text-color-3);
   width: 38px;
   height: auto;
   max-height: 38px;
@@ -82,20 +86,14 @@ svg {
   font-weight: 500;
   gap: 1rem;
   border-radius: 5px;
-  box-shadow: 0 0 1px 1px rgba(0, 102, 255, 0.05);
 }
 
 .button-primary {
-  background-color: #222;
-  color: #efefef;
+  background-color: var(--primary);
+  color: var(--text-color-4);
   padding: 1.5rem 2.5rem;
   font-size: 1.75rem;
-  box-shadow: 1px 10px 10px -10px rgba(0, 0, 0, 0.345);
-  transition: background 0.2s ease;
-}
-
-.button-secondary {
-  /* color: var(--blue); */
+  box-shadow: var(--shadow);
 }
 
 .button-icon {

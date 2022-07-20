@@ -1,5 +1,5 @@
 import { templateCategory } from "./templates/category-template.js";
-import { fetchData } from "./fetch-json.js";
+import { fetchData } from "./fetch-data.js";
 
 const mainEl = document.querySelector("#main");
 const loginBtn = document.querySelector(".header__login-button");

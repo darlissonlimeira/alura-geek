@@ -22,14 +22,7 @@
   gap: 0.5rem;
 }
 
-.header__login-button .button-icon {
-  display: none;
-  stroke: none;
-  fill: #aaa;
-  width: 28px;
-}
-
 .login__login-button {
-  background-color: rgb(235, 46, 36);
+  background-color: var(--warning);
   font-size: 1.75rem;
 }

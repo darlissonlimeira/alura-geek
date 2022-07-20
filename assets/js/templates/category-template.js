@@ -9,7 +9,9 @@ const templateCategory = (sectionName, produtsList) => {
     <section class="category">
       <div class="row category__container">
         <header class="category__header">
-          <h2 class="category__title">${sectionName}</h2>
+          <h2 id="${sectionName
+            .toLowerCase()
+            .replace(" ", "-")}" class="category__title">${sectionName}</h2>
           <a class="category___all-button" href="/produtos.html"
             >Ver tudo
             <svg

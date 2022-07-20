@@ -15,9 +15,9 @@
   align-items: center;
   font-size: 1.75rem;
   font-weight: 600;
-  color: #333;
+  color: var(--text-color-3);
 }
 
 .category___all-button svg {
-  stroke: #333;
+  stroke: var(--text-color-3);
 }

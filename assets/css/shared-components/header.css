@@ -37,7 +37,7 @@
   font-size: 2rem;
   margin-left: 2rem;
 
-  color: #eb2e24;
+  color: var(--warning);
 }
 
 .header__search {
@@ -48,12 +48,8 @@
   padding: 0.75rem 1rem;
   border-radius: 25px;
 
-  border: 2px solid #333;
+  border: var(--border);
   margin: 2rem 0 1rem 0;
-}
-
-.header__search:focus {
-  border-color: re;
 }
 
 .search {
@@ -74,6 +70,5 @@
 
 .button-search svg {
   width: 90%;
-  stroke: #333;
-  /* stroke: rgb(235, 46, 36); */
+  stroke: var(--text-color-3);
 }
