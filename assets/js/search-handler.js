@@ -1,0 +1,8 @@
+const searchInput = document.querySelector("#search-input");
+const searchButton = document.querySelector("#search-button");
+
+searchButton.addEventListener("click", () => {
+  const searchData = searchInput.value;
+
+  window.location.href = `/produtos.html?search=${searchData.toLowerCase()}`;
+});

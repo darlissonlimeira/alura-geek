@@ -10,7 +10,7 @@ const templateCategory = (sectionName, produtsList) => {
       <div class="row category__container">
         <header class="category__header">
           <h2 class="category__title">${sectionName}</h2>
-          <a class="category___all-button" href="#"
+          <a class="category___all-button" href="/produtos.html"
             >Ver tudo
             <svg
               xmlns="http://www.w3.org/2000/svg"

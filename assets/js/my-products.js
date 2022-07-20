@@ -6,7 +6,25 @@ const logoutForm = document.querySelector("#logout-form");
 const productListEl = document.querySelector(".h-product__list");
 const sellerId = new URLSearchParams(window.location.search).get("seller");
 
-const renderProducts = () => {
+const searchInput = document.querySelector("#search-input");
+const searchButton = document.querySelector("#search-button");
+
+const renderProducts = (searchFilter) => {
+  if (searchFilter) {
+    const productsHTML = productService
+      .findAll()
+      .filter((product) => product.seller === sellerId)
+      .filter((product) =>
+        product.name.toLowerCase().includes(searchFilter.toLowerCase())
+      )
+      .map((product) => templateManagerProduct(product))
+      .join("");
+
+    productListEl.innerHTML = productsHTML;
+
+    return;
+  }
+
   const productsHTML = productService
     .findAll()
     .filter((product) => product.seller === sellerId)
@@ -15,8 +33,6 @@ const renderProducts = () => {
 
   productListEl.innerHTML = productsHTML;
 };
-
-renderProducts();
 
 logoutForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -43,11 +59,10 @@ productItems.forEach((item) => {
   });
 });
 
-// alert(
-//   productService
-//     .findAll()
-//     .map((p) => p.name)
-//     .reduce((acc, curr) => acc + curr, "") +
-//     "sellerId:" +
-//     sellerId
-// );
+searchButton.addEventListener("click", () => {
+  const searchData = searchInput.value;
+
+  renderProducts(searchData);
+});
+
+renderProducts();
