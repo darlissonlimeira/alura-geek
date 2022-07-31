@@ -8,8 +8,6 @@ class ProductService {
   save(product) {
     const productExists = this.#repository.findByName(product.name);
 
-    // if (productExists) throw "Esse produto já existe na base de dados.";
-
     this.#repository.save(product);
   }
 
