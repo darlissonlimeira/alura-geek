@@ -42,7 +42,7 @@ logoutForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
   authService.signOut();
-  window.location.href = "/login.html";
+  window.location.href = "/alura-geek/login.html";
 
   return;
 });

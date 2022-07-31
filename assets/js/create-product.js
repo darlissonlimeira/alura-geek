@@ -48,5 +48,5 @@ form.addEventListener("submit", (event) => {
     productService.save(product);
   }
 
-  window.location.href = "/auth.html";
+  window.location.href = "/alura-geek/auth.html";
 });

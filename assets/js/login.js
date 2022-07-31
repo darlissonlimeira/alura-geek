@@ -11,5 +11,5 @@ form.addEventListener("submit", (event) => {
 
   if (!authData) return;
 
-  window.location.href = "/auth.html";
+  window.location.href = "/alura-geek/auth.html";
 });
