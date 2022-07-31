@@ -33,8 +33,6 @@ const fetchDataJSON = async () => {
 
 !localStorage.getItem("DRKTECK_DB") && fetchDataJSON();
 
-// fetchDataJSON();
-
 const fetchData = () => {
   const products = productService.findAll();
   const categories = categoryService.findAll();
