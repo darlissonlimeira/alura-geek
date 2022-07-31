@@ -14,7 +14,7 @@ const templateManagerProduct = (product) => {
         <div class="product__control">
           <a class="product__edit-button" href="/novo-produto.html?productId=${product.id}"
           >Editar produto</a>
-          <form class="product__form-delete" data-id="${product.id}">
+          <form method="POST" class="product__form-delete" data-id="${product.id}">
             <button type="submit" class="product__delete-button" data-label="Excluir produto">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

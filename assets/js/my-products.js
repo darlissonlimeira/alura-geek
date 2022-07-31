@@ -60,8 +60,6 @@ productItems.forEach((item) => {
       item.remove();
       productService.destroy(form.dataset.id);
     });
-
-    return false;
   });
 });
 
