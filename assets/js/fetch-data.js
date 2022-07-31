@@ -24,9 +24,9 @@ const mockData = ({ sellers, categories, products }) => {
 };
 
 const fetchDataJSON = async () => {
-  const { categories, products, sellers } = await fetch(
-    "../../database.json"
-  ).then((res) => res.json());
+  const { categories, products, sellers } = await fetch("./database.json").then(
+    (res) => res.json()
+  );
 
   mockData({ categories, products, sellers });
 };
