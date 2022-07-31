@@ -11,16 +11,20 @@ const searchButton = document.querySelector("#search-button");
 
 const renderProducts = (searchFilter) => {
   if (searchFilter) {
-    const productsHTML = productService
+    const products = productService
       .findAll()
       .filter((product) => product.seller === sellerId)
       .filter((product) =>
         product.name.toLowerCase().includes(searchFilter.toLowerCase())
       )
-      .map((product) => templateManagerProduct(product))
-      .join("");
+      .map((product) => templateManagerProduct(product));
 
+    const productsHTML = products.join("");
     productListEl.innerHTML = productsHTML;
+
+    document.querySelector(
+      "#results"
+    ).textContent = `${products.length} resultados para "${searchFilter}."`;
 
     return;
   }

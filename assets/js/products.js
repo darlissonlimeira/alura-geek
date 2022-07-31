@@ -7,15 +7,19 @@ const searchParam = new URLSearchParams(window.location.search).get("search");
 
 const renderProducts = (searchFilter) => {
   if (searchFilter) {
-    const productsHTML = productService
+    const products = productService
       .findAll()
       .filter((product) =>
         product.name.toLowerCase().includes(searchFilter.toLowerCase())
       )
-      .map((product) => templateProduct(product))
-      .join("");
+      .map((product) => templateProduct(product));
 
+    const productsHTML = products.join("");
     productListEl.innerHTML = productsHTML;
+
+    document.querySelector(
+      "#results"
+    ).textContent = `${products.length} resultados para "${searchFilter}."`;
 
     return;
   }
@@ -29,7 +33,7 @@ const renderProducts = (searchFilter) => {
 };
 
 const search = (searchData) => {
-  renderProducts(searchData.toLowerCase());
+  renderProducts(searchData);
 };
 
 const searchInput = document.querySelector("#search-input");

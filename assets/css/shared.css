@@ -11,8 +11,9 @@
   --text-color-3: #444;
   --text-color-4: #fcfcfc;
   --text-color-5: rgb(255 182 6);
+  --text-color-6: #777;
 
-  --border: 2px solid #222;
+  --border: 2px solid #999;
   --shadow: 1px 10px 10px -10px rgba(0, 0, 0, 0.345);
 }
 

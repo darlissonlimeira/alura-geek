@@ -62,3 +62,11 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.product-results {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0;
+  color: var(--text-color-3);
+}
