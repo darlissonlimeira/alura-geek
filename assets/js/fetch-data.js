@@ -31,13 +31,15 @@ const fetchDataJSON = async () => {
   mockData({ categories, products, sellers });
 };
 
-!localStorage.getItem("DRKTECK_DB") && fetchDataJSON();
-
 const fetchData = () => {
   const products = productService.findAll();
   const categories = categoryService.findAll();
 
   return groupProducts(categories, products);
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+  !localStorage.getItem("DRKTECK_DB") && fetchDataJSON();
+});
 
 export { fetchData };
