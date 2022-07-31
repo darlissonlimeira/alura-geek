@@ -14,8 +14,9 @@ const templateManagerProduct = (product) => {
         <div class="product__control">
           <a class="product__edit-button" href="/novo-produto.html?productId=${product.id}"
           >Editar produto</a>
-          <form method="" class="product__form-delete" data-id="${product.id}">
-            <button type="submit" class="product__delete-button" data-label="Excluir produto">
+          <form method="" class="product__form-delete">
+            <input class="product-id" type="hidden" value="${product.id}" />
+            <button class="product__delete-button" data-label="Excluir produto">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="button-icon"
@@ -29,7 +30,7 @@ const templateManagerProduct = (product) => {
                 />
               </svg>
             </button>
-            </form>
+          </form>
         </div>
         <div class="product__info">
           <h3 class="product__title">${product.name}</h3>

@@ -47,6 +47,8 @@ logoutForm.addEventListener("submit", (event) => {
   return;
 });
 
+renderProducts();
+
 const productItems = document.querySelectorAll(".product__item");
 
 productItems.forEach((item) => {
@@ -56,9 +58,11 @@ productItems.forEach((item) => {
     event.preventDefault();
     item.classList.add("remove");
 
+    const id = form.elements[0].value;
+
     item.addEventListener("transitionend", () => {
       item.remove();
-      productService.destroy(form.dataset.id);
+      productService.destroy(id);
     });
   });
 });
@@ -68,5 +72,3 @@ searchButton.addEventListener("click", () => {
 
   renderProducts(searchData);
 });
-
-renderProducts();
