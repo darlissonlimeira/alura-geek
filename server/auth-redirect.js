@@ -6,7 +6,6 @@ const sellerExists = session && sellerService.findOne(session.email);
 if (session && sellerExists) {
   const baseURL = window.location.origin;
   const myProductsURL = new URL("/alura-geek/meus-produtos.html", baseURL);
-  myProductsURL.search = `seller=${session.id}`;
 
   window.location.replace(myProductsURL);
 } else {

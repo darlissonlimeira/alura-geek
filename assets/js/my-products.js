@@ -4,7 +4,7 @@ import { templateManagerProduct } from "./templates/manager-product-template.js"
 
 const logoutForm = document.querySelector("#logout-form");
 const productListEl = document.querySelector(".h-product__list");
-const sellerId = new URLSearchParams(window.location.search).get("seller");
+const { id: sellerId } = JSON.parse(localStorage.getItem("DRKTECK_SESSION"));
 
 const searchInput = document.querySelector("#search-input");
 const searchButton = document.querySelector("#search-button");
