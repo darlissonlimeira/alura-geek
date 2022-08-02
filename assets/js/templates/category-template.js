@@ -12,7 +12,7 @@ const templateCategory = (sectionName, produtsList) => {
           <h2 id="${sectionName
             .toLowerCase()
             .replace(" ", "-")}" class="category__title">${sectionName}</h2>
-          <a class="category___all-button" href="/produtos.html"
+          <a class="category___all-button" href="/alura-geek/produtos.html"
             >Ver tudo
             <svg
               xmlns="http://www.w3.org/2000/svg"
